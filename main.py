@@ -12,7 +12,7 @@ current_generation = 0  # Generation counter
 
 class Car:
     def __init__(self):
-        self.sprite = pygame.image.load(r"C:\Users\Personal\Downloads\car.png").convert_alpha()
+        self.sprite = pygame.image.load(r"C:\Users\Personal\Downloads\simple car.png").convert_alpha()
         self.sprite = pygame.transform.scale(self.sprite, (CAR_SIZE_X, CAR_SIZE_Y))
         self.rotated_sprite = self.sprite
         self.position = [830, 920]
@@ -57,7 +57,7 @@ def run_simulation(genomes, config):
     
     pygame.init()
     screen = pygame.display.set_mode((WIDTH, HEIGHT))
-    game_map = pygame.image.load(r"C:\Users\Personal\Downloads\map2.png").convert()
+    game_map = pygame.image.load(r"C:\Users\Personal\Downloads\road map.png").convert()
     
     nets, cars = [], []
     for _, g in genomes:
